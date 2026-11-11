@@ -46,3 +46,9 @@ description: Design, implement, or strengthen automated tests from a deliberatel
 - If requirements do not define a unique expected outcome, distinguish approved behavior from independently defensible safety invariants and proposed safeguards; do not silently turn a proposal into a requirement or declare a defect without grounds
 - Never claim that a test passed, failed, or was executed without observed evidence; disclose tests that could not be run or were unstable
 - Run security-oriented tests only against systems the user is authorized to test; prefer safe isolated fixtures and avoid destructive or uncontrolled load tests
+
+## Cross-Cutting Issue Handoff
+
+- For a verified production defect found by a valid failing test, preserve the test and evidence, report expected versus actual behavior, and track the unresolved defect under the shared Issue workflow after checking for duplicates
+- If failure is caused by an invalid test, unstable environment, or unresolved specification, classify it accurately before filing; never fabricate a production defect or weaken a valid assertion to avoid an Issue
+- Issue creation does not permit production-code changes or unapproved specification decisions

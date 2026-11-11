@@ -28,3 +28,8 @@ description: Implement explicitly authorized production-code changes according t
 - Do not automatically commit, push, create branches, or publish a Pull Request; use the appropriate Git skills only upon an explicit request
 - A test failure or discovered defect does not authorize unrelated fixes or changes to approved requirements
 - Do not use speculative behavior as a default, and do not treat elapsed time or unanswered questions as approval
+
+## Cross-Cutting Issue Handoff
+
+- Report independently actionable defects, risks, or improvements uncovered outside the authorized implementation scope; use the shared Issue workflow to track verified deferred work without inserting unrelated changes into the current patch
+- Do not create redundant Issues for a problem already completely addressed in the current change. A finding that warrants an Issue does not authorize its implementation, a new design decision, or PR publication

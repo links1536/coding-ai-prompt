@@ -83,3 +83,10 @@ Title: (Short, imperative-style title in Japanese)
 - A request to draft a PR description does not authorize publication to GitHub
 - If authorization, credentials, or the required branches are unavailable for a requested publication, report the limitation instead of claiming success
 - Never run the commit skill automatically merely because a PR is being prepared
+
+## Cross-Cutting Issue Handoff
+
+- Treat GitHub Issues as independently managed work records, not mandatory children of PRs; do not automatically create an Issue for every PR or require a PR to track deferred work
+- Verify any related Issue IDs/URLs before citing them in the PR description. Include confirmed relationships in the existing `Why` or `Notes` sections only when relevant; keep the required PR format unchanged
+- If PR review reveals a distinct, actionable, out-of-scope follow-up, check existing Issues and record it under the shared Issue workflow. Do not silently expand the PR scope or presume the user approved the proposal
+- Publishing a PR or linking an Issue does not authorize closing an Issue, merging a PR, or altering approved requirements

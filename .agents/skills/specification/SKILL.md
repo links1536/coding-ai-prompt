@@ -56,3 +56,9 @@ description: Guide project planning, requirements definition, external/basic des
 
 - For each stage, report approved decisions, still-open decisions, and documents updated, when applicable; do not state that unapproved decisions are finalized
 - Stop and wait for user answers whenever further decisions are required; do not perform code implementation or Git operations as a side effect
+
+## Cross-Cutting Issue Handoff
+
+- Track confirmed deferred work or independently actionable design/documentation problems as Issues when appropriate, following `AGENTS.md`; do not require a PR to file them
+- Keep unresolved specification or design choices in the numbered **Question** table until the user decides. Do not open an Issue to bypass that decision or portray a proposed solution as approved; if recording an undecided proposal is appropriate, explicitly mark its status as unapproved
+- Creating or linking an Issue does not authorize progressing to implementation or treating future-milestone features as current scope

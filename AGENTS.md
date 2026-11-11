@@ -32,11 +32,10 @@
 - Keep the title short and specific to one actionable defect or improvement. Avoid vague titles, exaggerated impact, and assumed root causes
 - Keep the body as concise as a PR description: one sentence per prose section when practical, and at most two checklist items under `Acceptance Criteria`. Include only essential verified evidence and needed context; do not sacrifice accurate reproduction or meaningful completion criteria merely to shorten it
 - Distinguish observed facts from unverified hypotheses. Present `Proposal` as a suggestion, not an approved requirement or implementation instruction
+- Use `.github/ISSUE_TEMPLATE/issue.md` as the canonical GitHub Issue body template, removing YAML frontmatter and instructional HTML comments when constructing the API body. Set the concise Japanese Issue title in GitHub's title field, not in the Issue body
 - Use the exact Markdown structure below. Omit the entire optional `Related PR` section if no related PR has been verified. Do not add filler sections
 
 ```markdown
-Title: (Short, specific Japanese title)
-
 ## Context
 (One concise sentence explaining the relevant situation)
 

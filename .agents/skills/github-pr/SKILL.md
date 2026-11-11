@@ -29,9 +29,9 @@ Your task is to critically evaluate the provided changes and write a concise, ac
 1. Verify the repository, base branch, head branch, working-tree state, and exact commits and diff included in the PR
 2. Compare the stated rationale with the actual diff; verify issue links and test evidence before citing them
 3. Separate changes with different responsibilities and avoid inventing a unifying rationale
-4. Draft the title and description using the exact output format below
+4. Write a short, imperative-style Japanese PR title and draft the body using `.github/pull_request_template.md` as the canonical body template; replace its instructional comments with verified content and omit optional sections when not needed
 5. Only when PR publication is explicitly requested, verify the repository, base/head, title, and body before creating it; do not automatically commit or push
-6. When creating a PR, place the title in GitHub's title field and the content beginning with `## Summary` in the body; report the URL only after successful creation
+6. When creating a PR, place the title in GitHub's title field and the completed template body beginning with `## Summary` in the PR body; report the URL only after successful creation
 
 ## Language Rules
 
@@ -53,30 +53,15 @@ Your task is to critically evaluate the provided changes and write a concise, ac
 - Do not present assumptions or speculation as facts
 - Do not claim testing was performed unless evidence is provided
 - Include important risks or uncertainties only when supported by the available information
-- Strictly follow the output template below when providing a PR description
-- Do not add extra sections, commentary, or explanations to the description
+- Use `.github/pull_request_template.md` as the single source of truth for PR body headings, section order, content limits, and optional sections
+- Do not add extra sections, commentary, or explanations to the PR description
 
-## Output Format (nothing else in a PR description)
+## PR Template
 
-Title: (Short, imperative-style title in Japanese)
-
-## Summary
-(1–2 sentences describing what changed, based on verified information)
-
-## Changes
-- (Maximum 3 specific bullet points)
-
-## Why
-(1–2 sentences explaining the reason for the change, supported by evidence. Include an Issue link if available)
-
-## Testing
-- (1–2 bullet points describing verified testing)
-- (If testing information is unavailable, explicitly state that the testing status is unverified)
-
-(Optional – only if truly necessary)
-
-## Notes
-- (Only critical risks, limitations, or uncertainties that reviewers need to know. Omit if unnecessary)
+- Use `.github/pull_request_template.md` for both draft descriptions and published PRs
+- Write the PR title separately in Japanese; never include `Title:` or the title text as part of the PR body
+- Follow the template’s English headings and content guidance exactly; remove all instructional HTML comments and empty optional sections from the final PR body
+- If verified testing evidence is unavailable, explicitly say in Japanese that the testing status is unverified
 
 ## Execution Scope
 

@@ -25,7 +25,35 @@
 - Do not file a separate Issue for work already fully handled by the current authorized change or PR unless separate future tracking is genuinely necessary. An Issue may exist without a PR, and a PR does not require a newly created Issue
 - An Issue proposal is **not** approval of a new requirement, design choice, implementation, or priority. Record any undecided behavior as a question or explicitly unapproved proposal; never change approved specifications as a side effect
 - Issue creation is generally preauthorized when the repository and the designated GitHub App are known and access is available; do not ask for approval for every qualifying new Issue. If those prerequisites are not met, report a draft and the blocker rather than inventing credentials or an identity
-- Before creating an Issue, confirm its actionable problem and supporting evidence. Write a concise Japanese title and body with context, observed problem or justified opportunity, suggested next step, acceptance/completion criteria, and related PR links **only when verified and available**. Make uncertainty explicit, and never invent reproduction steps or links
+- Before creating an Issue, confirm its actionable problem and supporting evidence. Use the fixed Issue format below, and never invent reproduction steps, verified impacts, or links
+## Issue Description Format
+
+- Write the Issue title and body in Japanese, keeping the English section headings below unchanged; preserve identifiers and URLs in their original form
+- Keep the title short and specific to one actionable defect or improvement. Avoid vague titles, exaggerated impact, and assumed root causes
+- Keep the body as concise as a PR description: one sentence per prose section when practical, and at most two checklist items under `Acceptance Criteria`. Include only essential verified evidence and needed context; do not sacrifice accurate reproduction or meaningful completion criteria merely to shorten it
+- Distinguish observed facts from unverified hypotheses. Present `Proposal` as a suggestion, not an approved requirement or implementation instruction
+- Use the exact Markdown structure below. Omit the entire optional `Related PR` section if no related PR has been verified. Do not add filler sections
+
+```markdown
+Title: (Short, specific Japanese title)
+
+## Context
+(One concise sentence explaining the relevant situation)
+
+## Problem
+(One or two concise sentences describing the verified problem or actionable opportunity and evidence; label uncertainty explicitly)
+
+## Proposal
+(One concise sentence describing a proposed next step, not an approved decision)
+
+## Acceptance Criteria
+- [ ] (One verifiable completion condition)
+- [ ] (A second condition, only if necessary)
+
+## Related PR
+- (Verified PR reference only; omit this entire section if none exists)
+```
+
 ## Issue Label Rules
 
 - Use `bug` for confirmed defects. Generally use `enhancement` for improvements to features, performance, maintainability, or other non-defect work. Do not misclassify an unverified suspicion as a confirmed bug
